@@ -33,7 +33,7 @@ kept in other pens(the installation height were a little different). And **No.40
 ---
 
 ### Testing with CIEN
-1. The pretrained model is already put in `$ROOT/CIEN/data/Trained_CIEN.pth`.
+1. The pretrained model can be downloaded [here](https://pan.baidu.com/s/1pSGf6-bgAx4rBInBv2nDAQ?pwd=hzau). Organize it as `$ROOT/CIEN/data/Trained_CIEN.pth`.
 2. Test:
 ```shell
 cd $ROOT/CIEN
@@ -46,7 +46,7 @@ python test.py --config_file default_CIEN --with_nms True --type speed
 ```
 
 ### Testing with LWEN
-1. The pretrained model is already put in `$ROOT/LWEN/data/Trained_LWEN.pth`.
+1. The pretrained model can be downloaded [here](https://pan.baidu.com/s/1-DPCvZWnU-Qf4EF4FbmWrQ?pwd=hzau). Organize it as `$ROOT/LWEN/data/Trained_LWEN.pth`.
 2. Obtain contour information via CIEN:
 ```shell
 cd $ROOT/CIEN
