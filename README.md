@@ -23,7 +23,14 @@ python setup.py build develop
 ```
 ### Download the LISAP dataset
 We provide a **large-scale** dataset, LISAP(Liveweight and Instance Segmentation Annotation of Pigs), which
-can be download [here](https://pan.baidu.com/s/1CBIc5zbNm7GOMzO4ni5tQA?pwd=hzau). Organize it as `$ROOT/LISAP` in this project.
+can be download [here](https://tmp.link/room/67297c70a9b9c). Due to the large scale of this dataset, we split it into 8 items.
+Organize them as `$ROOT/LISAP` in this project:
+```shell
+#download the 8 items and put them in $ROOT
+cat LISAP.tar* > LISAP.tar
+tar -xf LISAP.tar
+```
+Or, the full LISAP can be downloaded directly via [BaiduNetdisk](https://pan.baidu.com/s/1uYccMAzP7pSorbzIGkBEwQ?pwd=hzau).
 
 Note: There are total 39 pigs in `weight_data.csv`. In LISAP, we only annotated **No.27~39**, because others pigs were
 kept in other pens(the installation height were a little different). And **No.40** means the indeterminate ID.
@@ -33,7 +40,7 @@ kept in other pens(the installation height were a little different). And **No.40
 ---
 
 ### Testing with CIEN
-1. The pretrained model can be downloaded [here](https://pan.baidu.com/s/1pSGf6-bgAx4rBInBv2nDAQ?pwd=hzau). Organize it as `$ROOT/CIEN/data/Trained_CIEN.pth`.
+1. The pretrained model can be downloaded [here](https://tmp.link/f/67281ed4da45b) or [BaiduNetdisk](https://pan.baidu.com/s/135eHmhn9ZjMb7WSsfgecNw?pwd=hzau). Organize it as `$ROOT/CIEN/data/Trained_CIEN.pth`.
 2. Test:
 ```shell
 cd $ROOT/CIEN
@@ -46,7 +53,7 @@ python test.py --config_file default_CIEN --with_nms True --type speed
 ```
 
 ### Testing with LWEN
-1. The pretrained model can be downloaded [here](https://pan.baidu.com/s/1-DPCvZWnU-Qf4EF4FbmWrQ?pwd=hzau). Organize it as `$ROOT/LWEN/data/Trained_LWEN.pth`.
+1. The pretrained model can be downloaded [here](https://tmp.link/f/67281f1df3154) or [BaiduNetdisk](https://pan.baidu.com/s/1_tRlfB6ciFVE25igS2_riw?pwd=hzau). Organize it as `$ROOT/LWEN/data/Trained_LWEN.pth`.
 2. Obtain contour information via CIEN:
 ```shell
 cd $ROOT/CIEN
