@@ -13,10 +13,10 @@ class DatasetInfo(object):
             'weight_file': '../LISAP/weight_data.csv'
         },
         'mini_LISAP_test': {
-            'image_dir': '/data/DATA/PigImageData/mini_Test',
-            'anno_dir': '/data/DATA/PigImageData/mini_Test_Class_agnostic_annotations.json',
+            'image_dir': '../LISAP/mini_Test',
+            'anno_dir': '../LISAP/mini_Test_Class_agnostic_annotations.json',
             'split': 'test',
-            'weight_file': '/data/DATA/PigImageData/weight_data.csv'
+            'weight_file': '../LISAP/weight_data.csv'
         },
         'LISAP_test': {
         'image_dir': '../LISAP/Test',
